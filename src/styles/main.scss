@@ -3,10 +3,23 @@
 body{
   background-color: black;
   color: aliceblue;
-  padding: 2em;
+  padding: 0em;
   text-align: center;
 }
 
 .card{
   background-color: gray;
+}
+
+.navbar{
+  border: .10em solid aliceblue;
+}
+
+.main-nav{
+  display: flex;
+  justify-content: left;
+}
+
+.login-img{
+  border-radius: 1em;
 }
