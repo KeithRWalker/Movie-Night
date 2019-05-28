@@ -11,11 +11,11 @@ const signMeIn = () => {
 };
 
 const authBuild = () => {
-  let movieSt = '<button id="loginBtn" class="btn login-btn" type="button">';
+  let movieSt = '<button id="login-btn" class="btn login-btn" type="button">';
   movieSt += `<img src="${loginBtn}" class="login-img">`;
   movieSt += '</button>';
-  util.printToDom('nav', movieSt);
-  document.getElementById('loginBtn').addEventListener('click', signMeIn);
+  util.printToDom('login', movieSt);
+  document.getElementById('login-btn').addEventListener('click', signMeIn);
 };
 
 export default { authBuild };
