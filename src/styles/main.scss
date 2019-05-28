@@ -18,8 +18,47 @@ body{
 .main-nav{
   display: flex;
   justify-content: left;
+  align-content: space-around;
+  height: 6em;
+  background-color: rgb(108, 108, 235);
 }
 
 .login-img{
   border-radius: 1em;
+}
+
+.hide{
+  display: none;
+}
+
+.movies-link{
+  color: red;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1em;
+  border-left: 2px dashed white;
+  border-right: 2px dashed white;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color:aqua;
+}
+
+.logout button:hover{
+  background-color: aqua;
+  -webkit-transform:scale(1.15);
+	transform:scale(1.15);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.navbar img:hover{
+	-webkit-transform:scale(1.15);
+	transform:scale(1.15);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
 }
