@@ -1,0 +1,34 @@
+{
+  "movies": [
+    {
+      "id": "movie0",
+      "title": "movieName0",
+      "img": " https://www.placecage.com/c/200/300",
+      "contentRating": "R"
+    },
+    {
+      "id": "movie1",
+      "title": "movieName1",
+      "img": " https://www.placecage.com/c/200/300",
+      "contentRating": "R"
+    },
+    {
+      "id": "movie2",
+      "title": "movieName2",
+      "img": " https://www.placecage.com/c/200/300",
+      "contentRating": "R"
+    },
+    {
+      "id": "movie3",
+      "title": "movieName3",
+      "img": " https://www.placecage.com/c/200/300",
+      "contentRating": "R"
+    },
+    {
+      "id": "movie4",
+      "title": "movieName4",
+      "img": " https://www.placecage.com/c/200/300",
+      "contentRating": "R"
+    }
+  ]
+}
