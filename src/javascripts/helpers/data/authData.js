@@ -5,6 +5,7 @@ const login = document.getElementById('login');
 const logout = document.getElementById('logout');
 const moviesLink = document.getElementById('moviesLink');
 const moviesHeader = document.getElementById('moviesHeader');
+const moviesCon = document.getElementById('moviesCon');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -14,6 +15,7 @@ const checkLoginStatus = () => {
       logout.classList.remove('hide');
       moviesLink.classList.remove('hide');
       moviesHeader.classList.remove('hide');
+      moviesCon.classList.remove('hide');
       logout.addEventListener('click', () => {
         firebase.auth().signOut();
         checkLoginStatus();
@@ -24,6 +26,7 @@ const checkLoginStatus = () => {
       logout.classList.add('hide');
       moviesLink.classList.add('hide');
       moviesHeader.classList.add('hide');
+      moviesCon.classList.add('hide');
     }
   });
 };

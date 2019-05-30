@@ -1,0 +1,22 @@
+{
+    "rating0": {
+      "id": "0Star",
+      "value": "1"
+    },
+    "rating1": {
+      "id": "1Star",
+      "value": "2"
+    },
+    "rating2": {
+      "id": "2Star",
+      "value": "3"
+    },
+    "rating3": {
+      "id": "3Star",
+      "value": "4"
+    },
+    "rating4": {
+      "id": "4Star",
+      "value": "5"
+    }
+}
