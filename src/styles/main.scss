@@ -7,10 +7,6 @@ body{
   text-align: center;
 }
 
-.card{
-  background-color: gray;
-}
-
 .navbar{
   border: .10em solid aliceblue;
 }
@@ -61,4 +57,39 @@ a:hover{
 	transform:scale(1.15);
 	-webkit-transition: .4s ease-in-out;
 	transition: .4s ease-in-out;
+}
+
+.form-con{
+  width: 50%;
+  align-self: center;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.movies-con{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.movie-card{
+  background-color: rgba(128, 128, 128, 0.212);
+  margin: 1em;
+  border-radius: 0%;
+  height: auto;
+  padding: .25em;
+  border: .1em outset gray;
+}
+
+.movie-card-btn{
+  margin: .5em;
+}
+
+.movie-img{
+  width: 100%;
+  height: auto;
 }
