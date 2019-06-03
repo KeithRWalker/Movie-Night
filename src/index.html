@@ -13,15 +13,40 @@
   <body class="text-center">
 
     <div class="app" id="app">
-        <nav class="navbar navbar-dark main-nav" id="nav">
-          <a class="navbar-brand" id="moviesTab" href="#">Movie History</a>
-          <div id="login" class="login hover"></div>
-          <div id="logout" class="logout hide"><button>Logout</button></div>
-          <div id="moviesLink" class="movies-link hide"><a href="#">Movies</a></div>
-        </nav>
-        <h2 id="moviesHeader" class="movies-header hide">Movies</h2>
 
-        <div id="moviesCon" class="movies-con card-columns hide"></div>
+      <nav class="navbar navbar-dark main-nav" id="nav">
+        <a class="navbar-brand" id="moviesTab" href="#">Movie History</a>
+        <div id="login" class="login hover"></div>
+        <div id="logout" class="logout hide"><button>Logout</button></div>
+        <div id="moviesLink" class="movies-link hide"><a href="#">Movies</a></div>
+      </nav>
+
+      <div class="container">
+
+      <div class="form-con hide" id="formCon">
+        <form>
+          <div class="form-group">
+            <label for="addMovieForm">Add a Movie</label>
+            <div class="row">
+              <input type="text" class="form-control col" id="addMovieForm" placeholder="Movie Name">
+              <input type="text" class="form-control col" id="addMovieImg" placeholder="Movie image URL">
+              <select class="form-control col" id="ratingSel">
+                  <option>Unrated</option>
+                  <option>PG</option>
+                  <option>PG-13</option>
+                  <option>R</option>
+              </select>
+              <button class="btn btn-danger" id="addNewMovie">Add Movie</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <h2 id="moviesHeader" class="movies-header hide">Movies</h2>
+      <div id="moviesCon" class="movies-con hide"></div>
+
+      </div>
+
     </div>
 
   </body>

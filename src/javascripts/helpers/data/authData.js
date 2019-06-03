@@ -1,11 +1,14 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import listeners from '../listeners';
+
 const login = document.getElementById('login');
 const logout = document.getElementById('logout');
 const moviesLink = document.getElementById('moviesLink');
 const moviesHeader = document.getElementById('moviesHeader');
 const moviesCon = document.getElementById('moviesCon');
+const formCon = document.getElementById('formCon');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -16,10 +19,8 @@ const checkLoginStatus = () => {
       moviesLink.classList.remove('hide');
       moviesHeader.classList.remove('hide');
       moviesCon.classList.remove('hide');
-      logout.addEventListener('click', () => {
-        firebase.auth().signOut();
-        checkLoginStatus();
-      });
+      formCon.classList.remove('hide');
+      listeners.addListeners();
     } else {
       console.error('logged out');
       login.classList.remove('hide');
@@ -27,6 +28,7 @@ const checkLoginStatus = () => {
       moviesLink.classList.add('hide');
       moviesHeader.classList.add('hide');
       moviesCon.classList.add('hide');
+      formCon.classList.add('hide');
     }
   });
 };
