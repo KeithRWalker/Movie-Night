@@ -27,7 +27,7 @@ body{
   display: none;
 }
 
-.movies-link{
+.nav-link{
   color: red;
   margin-left: 1em;
   margin-right: 1em;
@@ -44,12 +44,16 @@ a:hover{
   color:aqua;
 }
 
-.logout button:hover{
+.nav-btn button:hover{
   background-color: aqua;
   -webkit-transform:scale(1.15);
 	transform:scale(1.15);
 	-webkit-transition: .4s ease-in-out;
 	transition: .4s ease-in-out;
+}
+
+.nav-btn button{
+  margin-left: 1em;
 }
 
 .navbar img:hover{

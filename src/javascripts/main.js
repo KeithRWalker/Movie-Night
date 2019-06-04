@@ -1,7 +1,6 @@
 import firebase from 'firebase/app';
 
 import auth from './components/auth/auth';
-import allMovies from './components/allMovies/allMovies';
 
 import authData from './helpers/data/authData';
 
@@ -14,7 +13,6 @@ const init = () => {
   firebase.initializeApp(apiKeys.firebaseKeys);
   auth.authBuild();
   authData.checkLoginStatus();
-  allMovies.displayMovies();
 };
 
 init();
