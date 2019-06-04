@@ -8,11 +8,12 @@ import authData from './helpers/data/authData';
 import apiKeys from './helpers/apiKeys.json';
 
 import '../styles/main.scss';
+import 'bootstrap';
 
 const init = () => {
   firebase.initializeApp(apiKeys.firebaseKeys);
-  authData.checkLoginStatus();
   auth.authBuild();
+  authData.checkLoginStatus();
   allMovies.displayMovies();
 };
 
