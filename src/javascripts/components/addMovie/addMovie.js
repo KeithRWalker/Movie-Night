@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import apiKeys from '../../helpers/apiKeys.json';
 
-import allMovies from '../allMovies/allMovies';
+import allMovies from '../movies/movies';
 
 const firebaseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -19,7 +19,7 @@ const addNewMovie = (e) => {
   const newMovieAr = [];
 
   const newMovie = {
-    id: `${user}`,
+    uid: `${user}`,
     title: `${addMovieForm}`,
     img: `${addMovieImg}`,
     contentRating: `${ratingSel}`,
