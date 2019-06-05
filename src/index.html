@@ -18,7 +18,7 @@
         <a class="navbar-brand" id="moviesTab" href="#">Movie History</a>
         <div id="login" class="login hover"></div>
         <div id="logout" class="logout hide nav-btn"><button class="btn btn-success">Logout</button></div>
-        <div id="addMoviesLink" class="add-movies-link hide nav-btn"><button class="btn btn-success">Add a Movie</button></div>
+        <div id="addMoviesLink" class="add-movies-link hide nav-btn" data-toggle="modal" data-target="#addMovieModal"><button class="btn btn-success">Add a Movie</button></div>
         <div id="moviesLink" class="movies-link hide nav-link"><a href="#">All Movies</a></div>
         <div id="userMoviesLink" class="user-movies-link hide nav-link"><a href="#">Your Movies</a></div>
         <div id="watchlistLink" class="watchlist-link hide nav-link"><a href="#">Watch-List</a></div>
@@ -26,7 +26,7 @@
 
       <div class="container">
 
-      <div class="form-con hide" id="formCon">
+      <!-- <div class="form-con hide" id="formCon">
         <form>
           <div class="form-group">
             <label for="addMovieForm">Add a Movie</label>
@@ -43,6 +43,44 @@
             </div>
           </div>
         </form>
+      </div> -->
+
+      <div id="addMovieModal" class="modal add-movie-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"><label for="addMovieForm">Add a Movie</label></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-con hide" id="formCon">
+                <form>
+                  <div class="form-group">
+                    <!-- <label for="addMovieForm">Add a Movie</label> -->
+                    <!-- <div class="row"> -->
+                      <input type="text" class="form-control col" id="addMovieForm" placeholder="Movie Name">
+                      <input type="text" class="form-control col" id="addMovieImg" placeholder="Movie image URL">
+                      <select class="form-control col" id="ratingSel">
+                          <option>Unrated</option>
+                          <option>PG</option>
+                          <option>PG-13</option>
+                          <option>R</option>
+                      </select>
+                      <!-- <button class="btn btn-danger" id="addNewMovie">Add Movie</button> -->
+                    <!-- </div> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button> -->
+              <button type="button" class="btn btn-danger" id="addNewMovie" data-dismiss="modal">Add Movie</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <h2 id="moviesHeader" class="movies-header hide">Movies</h2>
