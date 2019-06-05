@@ -35,6 +35,7 @@ const checkLoginStatus = () => {
       });
       addNewMovieBtn.addEventListener('click', addMovie.addNewMovie);
       userMoviesLink.addEventListener('click', userMovies.displayUserMovies);
+      watchlistLink.addEventListener('click', allMovies.displayWatchlist);
       allMovies.displayMovies();
     } else {
       console.error('logged out');
