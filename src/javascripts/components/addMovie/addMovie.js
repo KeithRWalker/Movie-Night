@@ -25,7 +25,7 @@ const addNewMovie = (e) => {
     contentRating: `${ratingSel}`,
   };
   newMovieAr.push(newMovie);
-  allMovies.movieAr.push(newMovie);
+  // allMovies.movieAr.push(newMovie);
   axios.post(`${firebaseUrl}/movies.json`, newMovie).then(() => allMovies.displayMovies());
 };
 
