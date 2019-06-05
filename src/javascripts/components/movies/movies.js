@@ -28,7 +28,7 @@ const movieBuild = (array) => {
     st += `<img src="${movie.img}" class="movie-img">`;
     st += `<h5>${movie.title} (${movie.contentRating})</h5>`;
     st += '<button class="btn btn-danger delete-btn" type="button">Delete Movie</button>';
-    st += '<button class="watchlist-btn">Add To Watchlist</button>';
+    st += '<button class="watchlist-btn btn btn-danger" id="watchListBtn">Add To Watchlist</button>';
     st += '</div>';
   });
   util.printToDom('moviesCon', st);

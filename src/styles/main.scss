@@ -63,10 +63,10 @@ a:hover{
 	transition: .4s ease-in-out;
 }
 
-.form-con{
-  width: 50%;
-  align-self: center;
-}
+// .form-con{
+//   width: 50%;
+//   align-self: center;
+// }
 
 .container{
   display: flex;
@@ -97,3 +97,13 @@ a:hover{
   width: 100%;
   height: auto;
 }
+
+.modal-content{
+  background-color: black;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+// .form-con{
+//   display: flex;
+// }
